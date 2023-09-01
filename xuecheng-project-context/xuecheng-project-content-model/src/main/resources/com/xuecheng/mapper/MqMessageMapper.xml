@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.mapper.MqMessageMapper">
+  <resultMap id="BaseResultMap" type="com.xuecheng.content.model.po.MqMessage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="message_type" jdbcType="VARCHAR" property="messageType" />
+    <result column="business_key1" jdbcType="VARCHAR" property="businessKey1" />
+    <result column="business_key2" jdbcType="VARCHAR" property="businessKey2" />
+    <result column="business_key3" jdbcType="VARCHAR" property="businessKey3" />
+    <result column="mq_host" jdbcType="VARCHAR" property="mqHost" />
+    <result column="mq_port" jdbcType="INTEGER" property="mqPort" />
+    <result column="mq_virtualhost" jdbcType="VARCHAR" property="mqVirtualhost" />
+    <result column="mq_queue" jdbcType="VARCHAR" property="mqQueue" />
+    <result column="inform_num" jdbcType="INTEGER" property="informNum" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="returnfailure_date" jdbcType="TIMESTAMP" property="returnfailureDate" />
+    <result column="returnsuccess_date" jdbcType="TIMESTAMP" property="returnsuccessDate" />
+    <result column="returnfailure_msg" jdbcType="VARCHAR" property="returnfailureMsg" />
+    <result column="inform_date" jdbcType="TIMESTAMP" property="informDate" />
+  </resultMap>
+</mapper>

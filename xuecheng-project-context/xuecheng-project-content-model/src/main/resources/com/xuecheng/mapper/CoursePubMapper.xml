@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.mapper.CoursePubMapper">
+  <resultMap id="BaseResultMap" type="com.xuecheng.content.model.po.CoursePub">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="course_id" jdbcType="BIGINT" property="courseId" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="users" jdbcType="VARCHAR" property="users" />
+    <result column="tags" jdbcType="VARCHAR" property="tags" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="mt" jdbcType="VARCHAR" property="mt" />
+    <result column="mt_name" jdbcType="VARCHAR" property="mtName" />
+    <result column="st" jdbcType="VARCHAR" property="st" />
+    <result column="st_name" jdbcType="VARCHAR" property="stName" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="teachmode" jdbcType="VARCHAR" property="teachmode" />
+    <result column="pic" jdbcType="VARCHAR" property="pic" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="change_date" jdbcType="TIMESTAMP" property="changeDate" />
+    <result column="is_latest" jdbcType="TINYINT" property="isLatest" />
+    <result column="is_pub" jdbcType="TINYINT" property="isPub" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="charge" jdbcType="VARCHAR" property="charge" />
+    <result column="price" jdbcType="REAL" property="price" />
+    <result column="price_old" jdbcType="REAL" property="priceOld" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="valid" jdbcType="VARCHAR" property="valid" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+    <result column="market" jdbcType="LONGVARCHAR" property="market" />
+    <result column="teachplan" jdbcType="LONGVARCHAR" property="teachplan" />
+    <result column="teachers" jdbcType="LONGVARCHAR" property="teachers" />
+  </resultMap>
+</mapper>

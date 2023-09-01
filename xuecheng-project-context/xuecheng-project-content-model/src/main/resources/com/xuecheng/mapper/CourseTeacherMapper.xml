@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.mapper.CourseTeacherMapper">
+  <resultMap id="BaseResultMap" type="com.xuecheng.content.model.po.CourseTeacher">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="course_id" jdbcType="BIGINT" property="courseId" />
+    <result column="course_pub_id" jdbcType="BIGINT" property="coursePubId" />
+    <result column="teacher_name" jdbcType="VARCHAR" property="teacherName" />
+    <result column="position" jdbcType="VARCHAR" property="position" />
+    <result column="introduction" jdbcType="VARCHAR" property="introduction" />
+    <result column="photograph" jdbcType="VARCHAR" property="photograph" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+</mapper>
