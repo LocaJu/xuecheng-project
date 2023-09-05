@@ -40,7 +40,7 @@
                 type="XMLMAPPER"/>
 
         <!-- 配置需要指定生成的数据库和表，% 代表所有表 -->
-        <table tableName="mq_message" domainObjectName="MqMessage" />
+        <table tableName="course_category" domainObjectName="CourseCategory" />
 <!--        <table tableName="teachplan_work" domainObjectName="TeachplanWork" />-->
 <!--        <table tableName="teachplan_media" domainObjectName="TeachplanMedia" />-->
 <!--        <table tableName="teachplan" domainObjectName="Teachplan" />-->

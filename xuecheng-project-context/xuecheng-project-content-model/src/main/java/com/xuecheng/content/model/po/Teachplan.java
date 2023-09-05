@@ -1,9 +1,12 @@
 package com.xuecheng.content.model.po;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
-public class Teachplan {
+@Table(name = "teachplan")
+public class Teachplan implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     private Long id;
 
@@ -20,7 +23,7 @@ public class Teachplan {
     /**
      * 层级，分为1、2、3级
      */
-    private Short grade;
+    private Integer grade;
 
     /**
      * 课程类型:1视频、2文档
@@ -145,7 +148,7 @@ public class Teachplan {
      *
      * @return grade - 层级，分为1、2、3级
      */
-    public Short getGrade() {
+    public Integer getGrade() {
         return grade;
     }
 
@@ -154,7 +157,7 @@ public class Teachplan {
      *
      * @param grade 层级，分为1、2、3级
      */
-    public void setGrade(Short grade) {
+    public void setGrade(Integer grade) {
         this.grade = grade;
     }
 

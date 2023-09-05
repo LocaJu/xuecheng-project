@@ -10,6 +10,7 @@ public class CourseBase {
      * 主键
      */
     @Id
+    @GeneratedValue(generator = "JDBC")
     private Long id;
 
     /**
@@ -86,7 +87,7 @@ public class CourseBase {
      * 修改时间
      */
     @Column(name = "change_date")
-    private Date changeDate;
+    private LocalDateTime changeDate;
 
     /**
      * 创建人
@@ -409,7 +410,7 @@ public class CourseBase {
      *
      * @return change_date - 修改时间
      */
-    public Date getChangeDate() {
+    public LocalDateTime getChangeDate() {
         return changeDate;
     }
 
@@ -418,7 +419,7 @@ public class CourseBase {
      *
      * @param changeDate 修改时间
      */
-    public void setChangeDate(Date changeDate) {
+    public void setChangeDate(LocalDateTime changeDate) {
         this.changeDate = changeDate;
     }
 

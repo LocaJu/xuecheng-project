@@ -12,14 +12,14 @@ import lombok.ToString;
 public class PageParams {
     //当前页
     @ApiModelProperty("当前页")
-    private Long pageNo=1L;
+    private Integer pageNo=1;
     //每页条数
     @ApiModelProperty("每页条数")
-    private Long pageSize=10L;
+    private Integer pageSize=10;
 
     public PageParams() {}
 
-    public PageParams(Long pageNo, Long pageSize) {
+    public PageParams(Integer pageNo, Integer pageSize) {
         this.pageNo = pageNo;
         this.pageSize = pageSize;
     }
