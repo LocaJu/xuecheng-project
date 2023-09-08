@@ -1,0 +1,9 @@
+###上传文件
+POST {{media_host}}/media/upload/coursefile
+Content-Type: multipart/form-data;boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: formdata;name="filedata";filename="QQ截图20230829211723.png"
+Content-Type: application/octet-stream
+
+< c:/Users/77286/Desktop/QQ截图20230829211723.png
