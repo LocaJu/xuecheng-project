@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 引入数据库连接配置 -->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!-- 配置 tk.mybatis 插件 -->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
+
+        <!--<plugin type="org.mybatis.generator.plugins.LombokPlugin">
+            <property name="hasLombok" value="true"/>
+        </plugin>-->
+
+        <!-- 配置数据库连接 -->
+        <jdbcConnection
+                driverClass="com.mysql.cj.jdbc.Driver"
+                connectionURL="jdbc:mysql://192.168.59.65/xc2.0_content?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true&amp;useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true"
+                userId="root"
+                password="mysql">
+        </jdbcConnection>
+
+        <!-- 配置实体类存放路径 -->
+        <javaModelGenerator targetPackage="com.xuecheng.content.model.po" targetProject="src/main/java"/>
+
+        <!-- 配置 XML 存放路径 -->
+        <sqlMapGenerator targetPackage="com/xuecheng/mapper" targetProject="src/main/resources"/>
+
+        <!-- 配置 DAO 存放路径 -->
+        <javaClientGenerator
+                targetPackage="com.xuecheng.mapper"
+                targetProject="src/main/java"
+                type="XMLMAPPER"/>
+
+        <!-- 配置需要指定生成的数据库和表，% 代表所有表 -->
+        <table tableName="course_category" domainObjectName="CourseCategory" />
+<!--        <table tableName="teachplan_work" domainObjectName="TeachplanWork" />-->
+<!--        <table tableName="teachplan_media" domainObjectName="TeachplanMedia" />-->
+<!--        <table tableName="teachplan" domainObjectName="Teachplan" />-->
+<!--        <table tableName="mq_message_history" domainObjectName="MqMessageHistory" />-->
+<!--        <table tableName="course_teacher" domainObjectName="CourseTeacher" />-->
+<!--        <table tableName="course_pub_msg" domainObjectName="CoursePubMsg" />-->
+<!--        <table tableName="course_pub" domainObjectName="CoursePub" />-->
+<!--        <table tableName="course_market" domainObjectName="CourseMarket" />-->
+<!--        <table tableName="course_base" domainObjectName="CourseBase" />-->
+        <!--<table tableName="isc_admin_area" domainObjectName="AdminArea" />
+        <table tableName="isc_sc_node" domainObjectName="SysNode" />-->
+        <!--<table tableName="isc_sys_user" domainObjectName="SysUser" />
+        <table tableName="isc_sc_area" domainObjectName="SysArea" />
+        <table tableName="isc_sys_dict" domainObjectName="SysDict" />
+        <table tableName="isc_sys_dict_item" domainObjectName="SysDictItem" />
+        <table tableName="isc_depart" domainObjectName="SysDepart" />-->
+        <!--<table tableName="isc_algorithm" domainObjectName="Algorithm" />
+        <table tableName="isc_order_analysis_rule" domainObjectName="OrderAnalysisRule" />
+        <table tableName="isc_grid_keyword_list" domainObjectName="GridKeyWord" />
+        <table tableName="isc_grid_match" domainObjectName="GridMatch" />-->
+        <!--<table tableName="isc_order" domainObjectName="OrderDetail" />-->
+        <!--<table catalog="iscs" tableName="%">
+            <property name="ignoreQualifiersAtRuntime" value="true"/>
+            &lt;!&ndash; mysql 配置 &ndash;&gt;
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+    </context>
+</generatorConfiguration>
